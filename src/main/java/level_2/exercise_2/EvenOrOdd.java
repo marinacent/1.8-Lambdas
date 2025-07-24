@@ -8,9 +8,9 @@ public class EvenOrOdd {
         StringBuilder nums = new StringBuilder();
         numbers.forEach((n) -> {
             if (n % 2 == 0) {
-                nums.append("e" + n + ", ");
+                nums.append("e").append(n).append(", ");
             } else {
-                nums.append("o" + n + ", ");
+                nums.append("o").append(n).append(", ");
             }
         });
 
