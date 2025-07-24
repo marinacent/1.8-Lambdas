@@ -6,13 +6,7 @@ public class Main {
         String second = "second";
         String numbers = "12345";
 
-        Reverser rev = (a) -> {
-            StringBuilder b = new StringBuilder();
-            for (int i = a.length() - 1; i >= 0; i--) {
-                b.append(a.charAt(i));
-            }
-            return b.toString();
-        };
+        Reverser rev = (a) -> new StringBuilder(a).reverse().toString();
 
         System.out.println(rev.reverse(first));
         System.out.println(rev.reverse(second));
