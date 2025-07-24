@@ -10,4 +10,8 @@ public class SortByLength {
                 .sorted(Comparator.comparing(String::length))
                 .toList();
     }
+
+    public static void printSortedList(List<String> list) {
+        sortByLength(list).forEach(System.out::println);
+    }
 }
