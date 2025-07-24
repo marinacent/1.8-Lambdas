@@ -12,9 +12,7 @@ public class WithO {
     }
 
     public static void printElementsWithO(List<String> list) {
-        for (String str : getElementsWithO(list)) {
-            System.out.println(str);
-        }
+        getElementsWithO(list).forEach(System.out::println);
         System.out.println();
     }
 
