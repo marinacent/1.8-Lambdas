@@ -6,13 +6,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class Exercise1 {
-    private static final List<String> NAME_LIST = new ArrayList<>();
-    private static final List<String> CITY_LIST = new ArrayList<>();
-
-    static {
-        NAME_LIST.addAll(Arrays.asList("Sophia", "Joan", "Neus", "Ariadna", "Miquel", "Josep"));
-        CITY_LIST.addAll(Arrays.asList("Oslo", "Madrid", "Barcelona", "Rome", "Riga", "Odense"));
-    }
+    private static final List<String> NAME_LIST =
+            Arrays.asList("Sophia", "Joan", "Neus", "Ariadna", "Miquel", "Josep");
+    private static final List<String> CITY_LIST =
+            Arrays.asList("Oslo", "Madrid", "Barcelona", "Rome", "Riga", "Odense");
 
     public static List<String> getElementsWithO(List<String> list) {
         return list.stream()
