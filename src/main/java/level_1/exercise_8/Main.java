@@ -8,7 +8,7 @@ public class Main {
 
         Reverser rev = (a) -> {
             StringBuilder b = new StringBuilder();
-            for (int i = a.length() - 1; i > -1; i--) {
+            for (int i = a.length() - 1; i >= 0; i--) {
                 b.append(a.charAt(i));
             }
             return b.toString();
