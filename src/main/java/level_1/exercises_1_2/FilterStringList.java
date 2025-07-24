@@ -1,4 +1,4 @@
-package level_1.exercise_1;
+package level_1.exercises_1_2;
 
 import java.util.List;
 import java.util.Locale;
@@ -15,6 +15,8 @@ public class FilterStringList {
         getElementsWithO(list).forEach(System.out::println);
         System.out.println();
     }
+
+    /// TO DO: SEPARATE EXERCISES 1 AND 2 IN DIFFERENT PACKAGES????????!!!!!!!!!
 
     public static List<String> getElementsWithOLongerThan5(List<String> list) {
         return FilterStringList.getElementsWithO(list).stream()
