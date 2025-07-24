@@ -1,4 +1,4 @@
-package level_1.exercise_3;
+package level_1.exercises_3_4;
 
 public class Main {
 
