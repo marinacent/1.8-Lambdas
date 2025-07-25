@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("123", "Hola", "9", "Bon dia", "987654", "Bona nit",
-                "a", "aeiou", "0000000000", "A reveure", "-2");
+                "a", "aeiou", "0000000000", "No", "A reveure", "-2", "4,5");
 
         ListModifier.modifyList(list).forEach(System.out::println);
         System.out.println();

@@ -39,7 +39,7 @@ public class ListModifier {
 
     public static List<String> getNumbersOnly(List<String> list) {
         return list.stream()
-                .filter((a) -> a.matches("-?[0-9]*"))
+                .filter((a) -> a.matches("-?[0-9]*,?[0-9]*"))
                 .toList();
     }
 }
