@@ -10,6 +10,7 @@ public class EvenOrOdd {
         }
         StringBuilder nums = new StringBuilder();
         numbers.forEach((n) -> {
+            if (n == null) { return; }
             if (n % 2 == 0) {
                 nums.append("e").append(n).append(", ");
             } else {
@@ -17,7 +18,7 @@ public class EvenOrOdd {
             }
         });
 
-
+        if (nums.isEmpty()) { return ""; }
         return nums.substring(0, nums.length() - 2);
     }
 
