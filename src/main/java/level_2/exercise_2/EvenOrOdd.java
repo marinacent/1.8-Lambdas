@@ -1,6 +1,8 @@
 package level_2.exercise_2;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class EvenOrOdd {
 
@@ -8,18 +10,11 @@ public class EvenOrOdd {
         if (numbers == null || numbers.isEmpty()) {
             throw new IllegalArgumentException("List can't be null or empty");
         }
-        StringBuilder nums = new StringBuilder();
-        numbers.forEach((n) -> {
-            if (n == null) { return; }
-            if (n % 2 == 0) {
-                nums.append("e").append(n).append(", ");
-            } else {
-                nums.append("o").append(n).append(", ");
-            }
-        });
 
-        if (nums.isEmpty()) { return ""; }
-        return nums.substring(0, nums.length() - 2);
+        return numbers.stream()
+                .filter(Objects::nonNull)
+                .map((n) -> (n % 2 == 0 ? "e" : "o") + n)
+                .collect(Collectors.joining(", "));
     }
 
 }
