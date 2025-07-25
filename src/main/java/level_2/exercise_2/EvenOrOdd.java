@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 public class EvenOrOdd {
 
     public static String getEvenOrOddString(List<Integer> numbers) {
-        if (numbers == null || numbers.isEmpty()) {
-            throw new IllegalArgumentException("List can't be null or empty");
+        if (numbers == null) {
+            throw new IllegalArgumentException("List can't be null");
         }
 
         return numbers.stream()
