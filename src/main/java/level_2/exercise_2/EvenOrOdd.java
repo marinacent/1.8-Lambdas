@@ -5,7 +5,9 @@ import java.util.List;
 public class EvenOrOdd {
 
     public static String getEvenOrOddString(List<Integer> numbers) {
-        if (numbers == null) { return ""; }
+        if (numbers == null || numbers.isEmpty()) {
+            throw new IllegalArgumentException("List can't be null or empty");
+        }
         StringBuilder nums = new StringBuilder();
         numbers.forEach((n) -> {
             if (n % 2 == 0) {
