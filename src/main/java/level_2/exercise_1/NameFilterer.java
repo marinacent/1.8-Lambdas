@@ -5,6 +5,7 @@ import java.util.List;
 public class NameFilterer {
 
     public static List<String> get3LetterNamesWithInitialA(List<String> names) {
+        if (names == null) { return List.of(); }
         return names.stream()
                 .filter((a) -> a.charAt(0) == 'A' && a.length() == 3)
                 .toList();
