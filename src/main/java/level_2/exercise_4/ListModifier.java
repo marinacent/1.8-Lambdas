@@ -12,6 +12,7 @@ public class ListModifier {
         return list.stream()
                 .sorted(String::compareToIgnoreCase)
                 .sorted(Comparator.comparing((a) -> !a.toLowerCase(Locale.ROOT).contains("e")))
+                .map((a) -> a.replaceAll("[aA]", "4"))
                 .collect(Collectors.toList());
     }
 }
