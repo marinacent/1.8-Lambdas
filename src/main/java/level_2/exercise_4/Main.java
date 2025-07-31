@@ -10,16 +10,5 @@ public class Main {
 
         ListModifier.modifyList(list).forEach(System.out::println);
         System.out.println();
-
-        ListModifier.sortAlphabetically(list).forEach(System.out::println);
-        System.out.println();
-        ListModifier.containsEFirst(list).forEach(System.out::println);
-        System.out.println();
-        ListModifier.replaceAby4(list).forEach(System.out::println);
-        System.out.println();
-        ListModifier.getNumbersOnly(list).forEach(System.out::println);
-        System.out.println();
-
-
     }
 }
