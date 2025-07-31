@@ -9,6 +9,7 @@ public class Months {
 
     public static void printMonthsLambda() {
         MONTHS.forEach(month -> System.out.println(month));
+        System.out.println();
     }
 
     public static void printMonthsMethodReference() {

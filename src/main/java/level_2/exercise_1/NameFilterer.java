@@ -10,8 +10,4 @@ public class NameFilterer {
                 .filter((name) -> name.length() == 3 && name.charAt(0) == 'A')
                 .toList();
     }
-
-    public static void print3LetterNamesWithInitialA(List<String> names) {
-        get3LetterNamesWithInitialA(names).forEach(System.out::println);
-    }
 }

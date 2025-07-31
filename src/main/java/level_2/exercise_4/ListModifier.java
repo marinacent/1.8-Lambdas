@@ -1,10 +1,8 @@
 package level_2.exercise_4;
 
-import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Collectors;
 
 public class ListModifier {
     // I wasn't sure if I needed to output one list modified in 4 ways or 4 different lists

@@ -8,8 +8,8 @@ public class Main {
         List<String> exampleList = Arrays.asList("123", "Hola", "9", "Bon dia", "987654", "Bona nit",
                 "a", "aeiou", "0000000000", "A reveure");
 
-        SortByLength.printSortedAscendingList(exampleList);
-
-        SortByLength.printSortedDescendingList(exampleList);
+        System.out.println(SortByLength.sortByLengthAscending(exampleList));
+        System.out.println();
+        System.out.println(SortByLength.sortByLengthDescending(exampleList));
     }
 }

@@ -9,10 +9,14 @@ public class Main {
         List<String> nameList = Arrays.asList("Sophia", "Joan", "Neus", "Ariadna", "Miquel", "Josep");
         List<String> cityList = Arrays.asList("Oslo", "Madrid", "Barcelona", "Rome", "Riga", "Odense");
 
-        FilterStringList.printElementsWithO(nameList);
-        FilterStringList.printElementsWithO(cityList);
+        System.out.println(FilterStringList.getElementsWithO(nameList));
+        System.out.println();
+        System.out.println(FilterStringList.getElementsWithO(cityList));
+        System.out.println();
 
-        FilterStringList.printElementsWithOLongerThan5(nameList);
-        FilterStringList.printElementsWithOLongerThan5(cityList);
+        System.out.println(FilterStringList.getElementsWithOLongerThan5(nameList));
+        System.out.println();
+        System.out.println(FilterStringList.getElementsWithOLongerThan5(cityList));
+
     }
 }

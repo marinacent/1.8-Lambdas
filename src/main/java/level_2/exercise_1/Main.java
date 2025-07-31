@@ -7,6 +7,6 @@ public class Main {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Ana", "Andreu", "Joan", "Ava", "Pep");
 
-        NameFilterer.print3LetterNamesWithInitialA(names);
+        System.out.println(NameFilterer.get3LetterNamesWithInitialA(names));
     }
 }
